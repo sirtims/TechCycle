@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/header.css">header {
+   width: 100%;
+   background: linear-gradient(90deg, #979ae4, #4a4da6);
+   margin: 0;
+   position: fixed;
+   top: 0;
+   z-index: 1001;
+   box-shadow: 0 5px 12px black;
+}
+
+.header-inner-container {
+   display: flex;
+   align-items: center;
+   position: relative;
+   justify-content: space-between;
+   color: rgba(255, 255, 255, 0.7);
+   width: 95%;
+   margin-inline: auto;
+}
+
+.header-inner-container ul {
+   display: flex;
+}
+
+.header-inner-container ul li {
+   cursor: pointer;
+}
+
+.logo {
+   width: 150px;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo img {
+   width: 100%;
+}
+
+.nav-links {
+   display: flex;
+
+}
+
+.nav-links .links-one {
+   display: none;
+}
+
+.menu img {
+   width: 30px;
+   cursor: pointer;
+}
+
+.menu-links {
+   position: absolute;
+   top: 0;
+   left: -5.5%;
+   right: -5.5%;
+   height: 100vh;
+   color: black;
+   background: #000154d6;
+   display: none;
+   z-index: 2000;
+}
+
+.active {
+   display: block;
+}
+
+.menu-nav-inner-container {
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
+   height: 100%;
+   border: 1px solid black;
+   position: relative;
+
+}
+
+.menu-nav-inner-container .links-two {
+   color: #01036f;
+   flex-direction: column;
+   list-style: none;
+   margin-top: 3em;
+   padding: 0;
+   gap: 1em;
+   width: 80%;
+   height: 80vh;
+   font-size: 1.2rem;
+   background: white;
+   padding: 1em 0 0 1em;
+   margin-inline: auto;
+   font-weight: 500;
+   border-radius: 15px;
+   box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+.menu-nav-inner-container .links-two li {
+   transition: color 0.15s linear;
+}
+
+.menu-nav-inner-container .links-two li:hover {
+   color: rgb(232, 153, 5);
+
+}
+
+.menu-links img {
+   width: 30px;
+   position: absolute;
+   top: 1em;
+   right: 2em;
+}
+
+.menu-links img:hover {
+   cursor: pointer;
+}
+
+
+@media(min-width:1000px) {
+   .logo {
+      width: 250px;
+      height: 120px;
+   }
+
+   .nav-links .links-one {
+      display: flex;
+      gap: 1.2em;
+      list-style: none;
+
+   }
+
+   .nav-links .links-one li {
+      font-size: 1.5rem;
+      position: relative;
+      transition: color .15s ease;
+   }
+
+   .nav-links .links-one li:hover {
+      color: white;
+   }
+
+   .nav-links .links-one li:nth-child(1) {
+      color: white;
+   }
+
+   .nav-links .links-one li:nth-child(1)::before {
+      position: absolute;
+      background-color: #ffa500;
+      content: '';
+      height: 0.1em;
+      left: 0;
+      right: 50%;
+   }
+
+   .nav-links .links-one li::before {
+      position: absolute;
+      background-color: #ffa500;
+      content: '';
+      height: 0.1em;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      transition: right .3s ease;
+   }
+
+   .nav-links .links-one li:hover::before {
+      right: 50%;
+   }
+
+
+
+   .menu {
+      visibility: hidden;
+
+   }
+
+   .menu-links {
+      visibility: hidden;
+   }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/hero.css">@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:-webkit-any(article, aside, nav, section) h1 {
+   font-size: 1.5em;
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+}
+
+
+.hero {
+   padding-top: 100px;
+   width: 100%;
+   margin: 0;
+   background: linear-gradient(-125deg, rgba(2, 5, 110, 0.61), rgba(2, 5, 110, 0.61)),
+      url(/images/hero_img.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+
+}
+
+
+.hero_contents {
+   height: 70vh;
+   color: #fff;
+   text-align: center;
+   padding-top: 3em;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 1000px;
+   margin-inline: auto;
+   font-family: "Ubuntu", sans-serif;
+
+}
+
+
+.hero_title p {
+   font-family: "Ubuntu", sans-serif;
+   line-height: 15px;
+   margin: 0;
+   font-weight: 700;
+
+}
+
+
+.welcome {
+   font-size: 1.7em;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+
+.company_name {
+   position: relative;
+   width: fit-content;
+   font-size: 3rem;
+
+}
+
+
+.company_name::before {
+   content: '';
+   background: orange;
+   position: absolute;
+   border-radius: 50px;
+   left: 100%;
+   right: 0;
+   bottom: -0.4em;
+   height: 0.1em;
+   animation: slide_left 0.17s linear forwards;
+   animation-delay: .5s;
+}
+
+
+@keyframes slide_left {
+   to {
+      left: 50%;
+   }
+}
+
+
+.company_name span {
+   font-size: .9em;
+   font-weight: 400;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+
+.hero_p {
+   margin-top: 2em;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 2em;
+}
+
+
+.hero_p .highlight {
+   color: orange;
+   font-size: 1.2rem;
+}
+
+
+.hero_btn {
+   padding: 10px 30px;
+   border-radius: 50px;
+   font-size: 20px;
+   background: orange;
+   color: #fff;
+   text-decoration: none;
+   transition: background .15s ease,
+      color .15s ease;
+}
+
+
+.hero_btn:hover {
+   background: rgb(255, 255, 255);
+   color: #0003a2;
+}
+
+
+.hero .wave {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100px;
+   background: url(/images/wave.png);
+   background-size: 1000px 100px;
+
+}
+
+
+.hero .wave.wave1 {
+   animation: animate 12s linear infinite;
+   z-index: 1000;
+   opacity: 1;
+   animation-delay: 0s;
+
+}
+
+
+.hero .wave.wave2 {
+   animation: animate 8s linear infinite;
+   z-index: 999;
+   opacity: 0.2;
+   animation-delay: -5s;
+   bottom: 15px;
+}
+
+
+.hero .wave.wave3 {
+   animation: animate2 7s linear infinite;
+   z-index: 998;
+   opacity: 0.15;
+   animation-delay: -10s;
+   bottom: 15px;
+}
+
+
+@keyframes animate {
+   0% {
+      background-position-x: 0;
+   }
+
+   100% {
+      background-position-x: 1000px;
+   }
+}
+
+
+@keyframes animate2 {
+   0% {
+      background-position-x: 0;
+   }
+
+   100% {
+      background-position-x: -1000px;
+   }
+}
+
+
+@media (min-width: 1000px) {
+   .hero {
+      padding-top: 150px;
+      background-attachment: fixed;
+   }
+
+   .hero_contents {
+      height: 70vh;
+   }
+
+   .hero_title p {
+      line-height: 40px;
+
+
+   }
+
+   .welcome {
+      font-size: 2em;
+
+   }
+
+   .company_name {
+
+      font-size: 5rem;
+
+   }
+
+   .company_name span {
+      font-size: .9em;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7);
+   }
+
+   .hero_p {
+      margin-top: 2em;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.6em;
+   }
+
+   .hero_p .highlight {
+      color: orange;
+      font-size: 2rem;
+   }
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/about.css">section {
+   width: 100%;
+   margin: 0;
+   font-size: 1rem;
+}
+
+.about_wrapper {
+   width: 95%;
+   margin-inline: auto;
+}
+
+.about_img {
+   display: flex;
+   justify-content: center;
+}
+
+.about_img img {
+   width: 100%;
+   max-width: 400px;
+   object-fit: cover;
+
+}
+
+.about_info p {
+   font-size: 1.2rem;
+   line-height: 1.6em;
+}
+
+.about_info_ul {
+   margin-top: 3em;
+   padding-left: 0;
+   writing-mode: horizontal-tb;
+   direction: ltr;
+
+}
+
+.about_info_li {
+   display: flex;
+   gap: 20px;
+   align-items: self-start;
+
+}
+
+.about_info_li img {
+   height: 50px;
+   aspect-ratio: auto 40 / 40;
+   width: 50px;
+}
+
+.about_info_h1 {
+   color: rgb(0, 4, 131);
+   font-size: 2rem;
+
+}
+
+.about_info_ul h3 {
+   margin-top: 0;
+   font-size: 1.3rem;
+   color: orange;
+}
+
+
+
+
+@media (min-width: 800px) and (max-width:1200px) {
+
+   .about_wrapper {
+      display: flex;
+
+   }
+
+   .about_img {
+      width: 50%;
+
+   }
+
+   .about_info {
+      width: 50%;
+      padding: 0 1em;
+   }
+
+   .about_img img {
+
+      max-width: none;
+
+   }
+
+}
+
+@media (min-width: 1201px) {
+   .about_wrapper {
+      display: flex;
+
+   }
+
+   .about_img {
+      width: 40%;
+
+   }
+
+   .about_info {
+      width: 60%;
+      padding: 0 1em;
+   }
+
+   .about_img img {
+
+      max-width: none;
+
+   }
+}
+
+
+/*        details.map(el => (
+                     <li className="about_info_li" key={el.id}>
+                        <img src={el.url} alt="" />
+                        <div className='about_info_li_info'>
+                           <h3>{el.heading}</h3>
+                           <p>{el.message}</p>
+                        </div>
+                     </li>
+                  )) */</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/services.css">@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+.services {
+   width: 90%;
+   margin-top: 4em;
+   margin-inline: auto;
+}
+
+
+
+.services_header h1 {
+   font-size: 36px;
+   font-weight: 700;
+   font-style: normal;
+   text-transform: uppercase;
+   font-family: "Poppins", sans-serif;
+   color: #010483;
+   letter-spacing: 5px;
+}
+
+
+
+.services_header h2 {
+   position: relative;
+   font-size: 14px;
+   font-weight: 500;
+   gap: 3px;
+   padding: 0;
+   line-height: 1px;
+   margin: 0 0 5px 0;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   color: #aaaaaa;
+   font-family: "Poppins", sans-serif;
+}
+
+
+
+.services_header h2::after {
+   content: '';
+   position: absolute;
+   background: orange;
+   height: .13em;
+   border-radius: 50px;
+   width: 150px;
+   left: 110px;
+}
+
+
+
+.services_list {
+   padding-left: 0;
+}
+
+
+
+.services_list img {
+   width: 40px;
+   height: 40px;
+}
+
+
+
+.services_list li {
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   gap: 1.2em;
+   background: #f5f5ff;
+   margin: 2em 0;
+
+}
+
+
+
+.list_item {
+   opacity: 0;
+   transform: translate(100px) scale(0);
+   transition: opacity 0.3s linear,
+      transform 0.3s linear scale 0.3s linear;
+
+}
+
+
+
+.list_item.visible {
+   opacity: 1;
+   transform: none;
+   scale: 1;
+}
+
+
+
+.services_list h3 {
+   color: #010483;
+   font-size: 0.5;
+   font-weight: bold;
+}
+
+
+
+@media(min-width: 700px)and (max-width:900px) {
+   .services_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+   }
+
+   .services_list li {
+      margin-bottom: 0;
+   }
+}
+
+
+
+@media(min-width: 901px)and (max-width:1200px) {
+   .services_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1em;
+   }
+
+   .services_list li {
+      margin-bottom: 0;
+   }
+}
+
+
+
+@media(min-width: 1201px) {
+   .services_list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1em;
+   }
+
+   .services_list li {
+      margin-bottom: 0;
+   }
+}
+
+
+
+/* 
+
+
+
+      <section className='services'>
+         <div className="services_header">
+            <h3>Services</h3>
+            <h1>Our Services</h1>
+         </div>
+         <ul className='services_list'>
+            {services.map(el => (
+               <li key={el.id}>
+                  <img src={el.url} alt="" />
+                  <h3>{el.discription}</h3>
+               </li>
+            ))}
+         </ul>
+      </section> */</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/component.css">.price_item {
+   width: fit-content;
+   padding: 20px 0 35px;
+   background: #fff;
+   margin: 1em 1em 3em 1em;
+
+   border-radius: 10px;
+   box-shadow: 0 0 12px rgb(72, 70, 70);
+}
+
+.category {
+   text-align: center;
+}
+
+.category_name {
+   width: 98%;
+   font-family: "Montserrat", sans-serif;
+
+   padding: 14px 0 7px;
+   margin: 0 20px 20px 0;
+   font-size: 2rem;
+   font-weight: 700;
+   clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);
+
+
+   color: #f8f2f2;
+
+}
+
+.category_price {
+   color: #000;
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 40px;
+   margin-bottom: 0.5em;
+
+
+}
+
+.buletten_wrapper {
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50px;
+   margin: 0 0.5em;
+
+}
+
+.buletten_wrapper img {
+   width: 20px;
+   height: 18px;
+   object-fit: cover;
+}
+
+.category_list {
+   list-style: none;
+   padding-left: 0;
+   padding: 25px 15px;
+   margin: 0 0 30px;
+   border: 1px solid #e7e7e7;
+   border-left: none;
+   border-right: none;
+
+}
+
+.category_list li {
+   margin: 1em 0;
+   display: flex;
+   align-items: center;
+
+}
+
+.category_list p {
+   color: #777;
+   font-size: 1.1rem;
+   font-weight: 400;
+   line-height: 25px;
+   letter-spacing: 0.5px;
+   text-transform: capitalize;
+   margin: 0 0 12px;
+
+}
+
+/* buttons */
+.category_btn {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   text-align: center;
+   align-items: center;
+}
+
+.btn {
+   font-size: 22px;
+   font-weight: 500;
+   color: #fff;
+   text-transform: uppercase;
+   width: 200px;
+   padding: 6px 6px 5px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+/*  
+clip-path: polygon(x1 y1, x2 y2, x3 y3, ...);
+
+<section className='price_item'>
+         <div className="category">
+            <div className="category_name">BRONZE</div>
+            <div className="category_price">N180,000</div>
+         </div>
+         <ul className="category_list">
+            {infos.map(el => (
+               <li key={el.id}>
+                  <div className="buletten_wrapper">
+                     <img src="/images/buletten.webp" alt="" />
+                  </div>
+                  <p>{el.info}</p>
+               </li>
+            ))}
+         </ul>
+         <div className="category">
+            <button className="btn1">ORDER</button>
+            <button className="btn2">ORDER NOW</button>
+         </div>
+      </section> */</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/pricing.css">.pricing_main {
+   background: #e1e1e1;
+   padding: 3rem 1rem !important;
+   box-sizing: border-box;
+}
+
+.pricing_main_wrapper {
+   width: fit-content;
+   margin-inline: auto;
+
+}
+
+.pricing_main .services_header h2::after {
+   left: 150px;
+}
+
+.bronzeBg {
+   background: linear-gradient(to right, #30A6CC, #84D6EE 20px, #84D6EE 13px, #30A6CC 38px, #30A6CC 40%, #4DB5DC 60%);
+}
+
+.bronzeBtn {
+   background: linear-gradient(#41B1D9, #1098CC);
+}
+
+.silverBg {
+   background: linear-gradient(to right, #8a8d84, #f2f2ef 20px, #fffff7 13px, #b6b8b4 38px, #dcdfd8 40%, #c6c7c4 60%);
+}
+
+.silverBtn {
+   background: linear-gradient(#e0e4df, #adb0ad);
+}
+
+.goldBg {
+   background: linear-gradient(to right, #F37A21, #F5B259 20px, #F5B259 13px, #F37A21 38px, #F37A21 40%, #F8931F 60%);
+}
+
+.goldBtn {
+   background: linear-gradient(#FAAF3C, #F89923);
+}
+
+.diamondBg {
+   background: linear-gradient(to right, #84c00c, #dbdb0d 20px, #d4d420 13px, #76cb21 38px, #69b504 40%, #92d609 60%);
+}
+
+.diamondBtn {
+   background: linear-gradient(#92d609, #188c18);
+}
+
+@media (min-width: 700px) and (max-width:1200px) {
+   .pricing_main_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media (min-width: 1201px) {
+   .pricing_main_wrapper {
+      display: flex;
+      align-items: flex-start;
+
+   }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/resultComponents/resultComponent.css">.resultCom_wrapper {
+   position: relative;
+   /* border: 2px solid black; */
+   padding: 3rem 0 1rem 0;
+   background: white;
+   width: 90%;
+   margin-inline: auto;
+   margin-bottom: 4em;
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: 0 0 12px gray;
+
+}
+
+.smiley {
+   position: absolute;
+   top: -30px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 24px;
+   background: darkblue;
+   padding: 12px;
+   color: #fff;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.smiley img {
+   width: 50px;
+   height: 50px;
+}
+
+
+
+.result_details h1 {
+   font-size: 3.5rem;
+   color: darkblue;
+   margin: 0;
+}
+
+.result_details p {
+   font-size: 1rem;
+   color: rgb(95, 95, 95);
+   margin: 0 0 1em 0;
+}
+
+.result_details .small {
+   font-size: 1.75rem;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/result.css">.result_section {
+   width: 100%;
+   padding: 4em 0;
+   background: rgba(229, 240, 255, 0.463);
+}
+
+.result_section .result_wrapper {
+   width: 95%;
+   margin-inline: auto;
+}
+
+@media (min-width:700px) and (max-width:1000px) {
+   .result_section .result_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .down {
+      transform: translateY(50px);
+   }
+}
+
+@media (min-width: 1001px) and (max-width:1200px) {
+   .result_section .result_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .down {
+      transform: translateY(50px);
+   }
+}
+
+@media (min-width: 1201px) {
+   .result_section .result_wrapper {
+      display: flex;
+      gap: 1em;
+
+   }
+
+   .down {
+      transform: translateY(50px);
+   }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Tmothy Omafe Ameh/Desktop/tech-cycle/app/src/index.css">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+}
+
+
+
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1190.0" data-gr-ext-installed="">
+    <div id="root"><header><div class="header-inner-container"><div class="logo"><img src="./Vite + React_files/logo.png" alt=""></div><div class="nav-links"><ul class="links-one"><li>Home</li><li>Services</li><li>Portfolio</li><li>Team</li><li>Contact</li><li>Pricing</li><li>Our Blog</li></ul><div class="menu"><img src="./Vite + React_files/Burger.png" alt=""></div></div><div class="menu-links  "><div class="menu-nav-inner-container"><img src="./Vite + React_files/X.png" alt=""><ul class="links-two"><li>Home</li><li>Services</li><li>Portfolio</li><li>Team</li><li>Contact</li><li>Pricing</li><li>Our Blog</li></ul></div></div></div></header><section class="hero"><div class="hero_contents"><div class="hero_title"><p class="welcome" style="opacity: 1; will-change: auto; transform: none;">Welcome to</p> <br><p class="company_name" style="transform: translateX(0px); opacity: 1; will-change: auto;">TECH<span>CYPLES</span></p></div><p class="hero_p" style="opacity: 1; will-change: auto; transform: none;">We create <span class="highlight">Robust,secure and affordable website, as well as graphics design</span> for small and large scale business owners around the world we also promote your business/brand via our dynamic digital marketing skills.</p><a class="hero_btn" href="http://localhost:5173/#" style="transform: translateX(0px); opacity: 1; will-change: auto;">Contact Us</a></div><div class="wave wave1"></div><div class="wave wave2"></div><div class="wave wave3"></div></section><section><div class="about_wrapper"><div class="about_img" style="opacity: 1; transform: none; will-change: auto;"><img src="./Vite + React_files/dev1.avif" alt=""></div><div class="about_info"><div style="opacity: 1; transform: none; will-change: auto;"><h2 class="about_info_h1">Who we are</h2><p class="about_info_p">we build websites that are not only visually beautiful, but also functionally effective. Our team of web strategists, designers, developers, and project managers work together to help clients meet their business objectives.</p></div><ul class="about_info_ul"><li class="about_info_li" style="opacity: 0; transform: scale(0.3);"><img src="./Vite + React_files/Fast.png" alt=""><div class="about_info_li_info"><h3 class="about_info_li_info_h3">We're Fast</h3><p>We deliver all projects as fast as possible, our websites are automated and get delivered to you almost instantly.</p></div></li><li class="about_info_li" style="opacity: 0; transform: scale(0.3);"><img src="./Vite + React_files/Reliable.png" alt=""><div class="about_info_li_info"><h3 class="about_info_li_info_h3">Reliable</h3><p>With our several years of experience and engineers, we have learnt in the past years to be able to fully optimize our platform for reliability and dependability.</p></div></li><li class="about_info_li" style="opacity: 0; transform: scale(0.3);"><img src="./Vite + React_files/Satisfactory.png" alt=""><div class="about_info_li_info"><h3 class="about_info_li_info_h3">100% Satisfactory</h3><p>WWe make our project suite your taste/demands perfectly, just as you wish. Here at MSORG Developers, we make your dreams come true, just the way you wish.</p></div></li></ul></div></div></section><section class="services"><div class="services_header" style="opacity: 0; transform: translateY(100px);"><h2>Services</h2><h1>Our Services</h1></div><ul class="services_list"><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/web.png" alt=""><h3>Web Development</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/mobile.png" alt=""><h3>Mobile Applications</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/ussd.png" alt=""><h3>USSD App Development</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/ui.png" alt=""><h3>Ui/Ux Design</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/ads.png" alt=""><h3>Digital Marketing</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/graphic.jpg" alt=""><h3>Graphic Design</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/branding.png" alt=""><h3>Logos/Branding</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/video.png" alt=""><h3>3D Video Animation</h3></li><li style="opacity: 0; transform: translateX(100px) scale(0);"><img src="./Vite + React_files/network.png" alt=""><h3>Networking</h3></li></ul></section><section class="pricing_main"><div class="services_header" style="opacity: 0; transform: translateY(100px);"><h2>VTU WEBSITE</h2><h1>PRICING</h1></div><div class="pricing_main_wrapper"><section class="price_item"><div class="category"><div class="category_name bronzeBg">BRONZE</div><div class="category_price">₦180,000</div></div><ul class="category_list"><li><div class="buletten_wrapper bronzeBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Data</p></li><li><div class="buletten_wrapper bronzeBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime(VTU/MOMO, Share and sell </p></li><li><div class="buletten_wrapper bronzeBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Hosting &amp; Domain - 1 year(.com/.ng/.com.ng)</p></li><li><div class="buletten_wrapper bronzeBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Hosting &amp; Domain - 1 year(.com/.ng/.com.ng)</p></li></ul><div class="category_btn"><a class="btn bronzeBtn">ORDER</a><a class="btn bronzeBtn">ORDER NOW</a></div></section><section class="price_item"><div class="category"><div class="category_name silverBg">SILVER</div><div class="category_price">₦200,000</div></div><ul class="category_list"><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Data</p></li><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime(VTU/MOMO, Share and sell </p></li><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Hosting &amp; Domain - 1 year(.com/.ng/.com.ng)</p></li><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Hosting &amp; Domain - 1 year(.com/.ng/.com.ng)</p></li><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Bill Payment</p></li><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime to Cash</p></li><li><div class="buletten_wrapper silverBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Cable Subscription</p></li></ul><div class="category_btn"><a class="btn silverBtn">ORDER</a><a class="btn silverBtn">ORDER NOW</a></div></section><section class="price_item"><div class="category"><div class="category_name goldBg">GOLD</div><div class="category_price">₦230,000</div></div><ul class="category_list"><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Data</p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime(VTU/MOMO, Share and sell </p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Education Pin (WEAC &amp; NECO)</p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Hosting &amp; Domain - 1 year(.com/.ng/.com.ng)</p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Bill Payment</p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime to Cash</p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Bulk SMS</p></li><li><div class="buletten_wrapper goldBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Cable Subscription</p></li></ul><div class="category_btn"><a class="btn goldBtn">ORDER</a><a class="btn goldBtn">ORDER NOW</a></div></section><section class="price_item"><div class="category"><div class="category_name diamondBg">DIAMOND</div><div class="category_price">₦230,000</div></div><ul class="category_list"><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Data</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime(VTU/MOMO, Share and sell </p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Education Pin (WEAC &amp; NECO)</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Hosting &amp; Domain - 1 year(.com/.ng/.com.ng)</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Bill Payment</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Airtime to Cash</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Bulk SMS</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Cable Subscription</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Smile Data</p></li><li><div class="buletten_wrapper diamondBtn"><img src="./Vite + React_files/buletin.png" alt=""></div><p>Recharge Printing</p></li></ul><div class="category_btn"><a class="btn diamondBtn">ORDER</a><a class="btn diamondBtn">ORDER NOW</a></div></section></div></section><section class="result_section"><div class="result_wrapper"><div class="resultCom_wrapper undefined"><div class="smiley"><img src="./Vite + React_files/smile.png" alt=""></div><div class="result_details"><h1 class="">500</h1><p>Happy Clients</p></div></div><div class="resultCom_wrapper down"><div class="smiley"><img src="./Vite + React_files/folder.png" alt=""></div><div class="result_details"><h1 class="">50</h1><p>Completed Projects</p></div></div><div class="resultCom_wrapper undefined"><div class="smiley"><img src="./Vite + React_files/person.png" alt=""></div><div class="result_details"><h1 class="small">24/7</h1><p>Always Available Everyday</p></div></div><div class="resultCom_wrapper down"><div class="smiley"><img src="./Vite + React_files/people.png" alt=""></div><div class="result_details"><h1 class="">20</h1><p>Always Available Everyday</p></div></div></div></section></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

@@ -1,0 +1,128 @@
+section {
+   width: 100%;
+   margin: 0;
+   font-size: 1rem;
+}
+
+.about_wrapper {
+   width: 95%;
+   margin-inline: auto;
+}
+
+.about_img {
+   display: flex;
+   justify-content: center;
+}
+
+.about_img img {
+   width: 100%;
+   max-width: 400px;
+   object-fit: cover;
+
+}
+
+.about_info p {
+   font-size: 1.2rem;
+   line-height: 1.6em;
+}
+
+.about_info .intro {
+   width: 95%;
+   padding: 1em;
+}
+
+.about_info_ul {
+   margin-top: 3em;
+   /* padding-left: ; */
+   writing-mode: horizontal-tb;
+   direction: ltr;
+
+}
+
+.about_info_li {
+   display: flex;
+   gap: 20px;
+   align-items: self-start;
+   width: 90%;
+
+}
+
+.about_info_li img {
+   height: 50px;
+   aspect-ratio: auto 40 / 40;
+   width: 50px;
+}
+
+.about_info_h1 {
+   color: rgb(0, 4, 131);
+   font-size: 2rem;
+
+}
+
+.about_info_ul h3 {
+   margin-top: 0;
+   font-size: 1.3rem;
+   color: orange;
+}
+
+
+
+
+@media (min-width: 800px) and (max-width:1200px) {
+
+   .about_wrapper {
+      display: flex;
+
+   }
+
+   .about_img {
+      width: 50%;
+
+   }
+
+   .about_info {
+      width: 50%;
+      padding: 0 1em;
+   }
+
+   .about_img img {
+
+      max-width: none;
+
+   }
+
+}
+
+@media (min-width: 1201px) {
+   .about_wrapper {
+      display: flex;
+
+   }
+
+   .about_img {
+      width: 40%;
+
+   }
+
+   .about_info {
+      width: 60%;
+      padding: 0 1em;
+   }
+
+   .about_img img {
+
+      max-width: none;
+
+   }
+}
+
+
+/*        details.map(el => (
+                     <li className="about_info_li" key={el.id}>
+                        <img src={el.url} alt="" />
+                        <div className='about_info_li_info'>
+                           <h3>{el.heading}</h3>
+                           <p>{el.message}</p>
+                        </div>
+                     </li>
+                  )) */

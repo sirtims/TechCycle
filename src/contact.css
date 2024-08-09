@@ -1,0 +1,82 @@
+.linkContainer {
+   width: fit-content;
+   padding: 2em;
+   margin: 0;
+}
+
+.linkContainer .services_header h2::after {
+   left: 150px;
+}
+
+.linkContainer .link {
+   list-style: none;
+   padding: 0;
+
+}
+
+.linkContainer .link li {
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   gap: 1em;
+   margin: 1em 0;
+
+}
+
+.linkContainer .link li .link_img {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 20px;
+   height: 20px;
+   padding: 0.5em;
+   border-radius: 50px;
+   background: lightblue;
+   transition: background 0.2s ease;
+}
+
+.linkContainer .link li:hover .link_img {
+   background: darkblue;
+}
+
+.linkContainer .link li .link_img svg {
+   transition: fill 0.2s ease;
+}
+
+.linkContainer .link li:hover .link_img svg {
+   fill: white;
+}
+
+.linkContainer .link li .link_img img {
+   width: 100%;
+}
+
+.linkContainer .link li .link_detail {
+   color: darkblue;
+}
+
+.linkContainer .link li .link_detail h2 {
+   margin-bottom: 0;
+}
+
+.linkContainer .link li .link_detail p {
+   margin-top: 0;
+}
+
+@media (min-width: 700px) {
+   .linkContainer .link {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+   }
+
+   .linkContainer .link li {
+
+      align-items: start;
+
+   }
+
+   .linkContainer .link li .link_detail h2 {
+      margin-top: 0;
+   }
+}

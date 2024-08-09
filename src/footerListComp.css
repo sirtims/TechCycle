@@ -1,0 +1,47 @@
+.footerListCompDiv {
+   width: fit-content;
+}
+
+.footerListCompDiv h3 {
+   margin-bottom: 0;
+}
+
+.footerListCompDiv ul {
+   list-style: none;
+   padding-left: 0.5em;
+
+}
+
+.footerListCompDiv ul li {
+   display: flex;
+   gap: 1em;
+   margin: 0;
+}
+
+.footerListCompDiv ul li p {
+   margin-top: 0;
+   font-size: 0.9rem;
+   color: rgb(224, 211, 187);
+}
+
+.footerListCompDiv ul li p:nth-child(1) {
+   color: rgb(194, 127, 2);
+}
+
+
+
+
+
+
+/* 
+  <div className="footerListComp">
+         <h3>Our Services</h3>
+         <ul>
+            {ourServiceList.map((el, index) => (
+               <li key={index}>
+                  <p> &rarr;</p>
+                  <p>{el}</p>
+               </li>
+            ))}
+         </ul>
+      </div> */

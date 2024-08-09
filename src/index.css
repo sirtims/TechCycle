@@ -1,0 +1,101 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+.app .upBtn {
+  position: fixed;
+  box-shadow: 0 0 12px rgb(57, 57, 57);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: rgb(145, 60, 145);
+  bottom: 3em;
+  right: 2em;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in,
+    display 1s ease-in;
+
+}
+
+.app .upBtn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app .upBtn:hover {
+
+  background: rgb(148, 125, 148);
+
+}
+
+.app .upBtn p {
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.app .whatsappBtn {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+  bottom: 3em;
+  left: 2em;
+  border-radius: 50px;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 0 12px rgb(57, 57, 57);
+  transition: opacity 1s ease-in,
+    display 1s ease-in;
+}
+
+.app .whatsappBtn img {
+  width: 100%;
+  border-radius: 50px;
+  /* height: 35px; */
+}
+
+.app .whatsappBtn.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fallback {
+  font-size: 2rem;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100Vh;
+}
