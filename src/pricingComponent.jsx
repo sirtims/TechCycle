@@ -14,7 +14,7 @@ const PricingComponents = ({ info, details, className }) => {
             {info.map(el => (
                <li key={el.id}>
                   <div className={`buletten_wrapper ${className.btnBg}`}>
-                     <img src="/images/buletin.png" alt="" />
+                     <img src="/images/bulletin.svg" alt="" />
                   </div>
                   <p>{el.info}</p>
                </li>
