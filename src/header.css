@@ -1,19 +1,19 @@
 header {
    width: 100%;
-   background: linear-gradient(90deg, #979ae4, #4a4da6);
+   background: white;
    margin: 0;
    position: fixed;
    top: 0;
    left: 0;
    right: 0;
    z-index: 1001;
-   box-shadow: 0 5px 12px black;
+   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.382);
    transition: background 0.5s ease;
 }
 
 .transparent {
-   background: linear-gradient(90deg, #e4db97d2, #a69e4ada);
-   color: white;
+   background: rgb(228, 179, 0);
+
 }
 
 .header-inner-container {
@@ -21,8 +21,8 @@ header {
    align-items: center;
    position: relative;
    justify-content: space-between;
-   color: rgba(255, 255, 255, 0.7);
-   width: 95%;
+   color: darkblue;
+   width: 90%;
    margin-inline: auto;
 }
 
@@ -48,7 +48,7 @@ header {
 
 .nav-links {
    display: flex;
-
+   justify-content: end;
 }
 
 .nav-links .links-one {
@@ -134,9 +134,12 @@ header {
       height: 40px;
    }
 
+
+
    .nav-links .links-one {
       display: flex;
       gap: 1.2em;
+      /* justify-content: end; */
       list-style: none;
 
    }
@@ -148,7 +151,18 @@ header {
    }
 
    .nav-links .links-one li:hover {
+      color: rgb(228, 179, 0);
+      ;
+   }
+
+   .transparent .links-one li {
       color: white;
+
+   }
+
+   .transparent .links-one li:hover {
+      color: darkblue;
+
    }
 
    .nav-links .links-one .link {
@@ -156,32 +170,55 @@ header {
    }
 
    .nav-links .links-one .link li.switch {
+      color: darkblue;
+   }
+
+   .transparent.nav-links .links-one .link li.switch {
       color: white;
+   }
+
+   .nav-links .links-one .link li.switch:hover {
+      color: rgb(228, 179, 0);
+   }
+
+   .transparent.nav-links .links-one .link li.switch {
+      color: darkblue;
    }
 
    .link {
 
-      color: rgba(255, 255, 255, 0.7)
+      color: darkblue;
    }
+
 
    .nav-links .links-one .link li.switch::before {
       position: absolute;
-      background-color: #ffa500;
+      background-color: rgb(228, 179, 0);
       content: '';
       height: 0.1em;
       left: 0;
       right: 50%;
    }
 
+   .transparent .nav-links .links-one .link li.switch::before {
+
+      background-color: darkblue;
+
+   }
+
    .nav-links .links-one li::before {
       position: absolute;
-      background-color: #ffa500;
+      background-color: rgb(228, 179, 0);
       content: '';
       height: 0.1em;
       left: 0;
       right: 100%;
       bottom: 0;
       transition: right .3s ease;
+   }
+
+   .transparent .nav-links .links-one li::before {
+      background-color: darkblue;
    }
 
    .nav-links .links-one li:hover::before {
@@ -191,11 +228,11 @@ header {
 
 
    .menu {
-      visibility: hidden;
+      display: none;
 
    }
 
    .menu-links {
-      visibility: hidden;
+      display: none;
    }
 }

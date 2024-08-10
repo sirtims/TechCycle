@@ -63,7 +63,7 @@ const Header = ({ scroll }) => {
                </ul>
                {/* menu bar starts here */}
                <div className="menu">
-                  <img onClick={handleToggle} src="/images/Burger.png" alt="" />
+                  <img onClick={handleToggle} src="/images/menu2.svg" alt="" />
                </div>
                {/* menu bar end  */}
             </div>

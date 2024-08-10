@@ -28,8 +28,10 @@ const Footer = () => {
    return (
       <footer>
          <div className="footerInner_wrapper">
+            <FooterListComp header={services} list={ourServiceList} />
+            <FooterListComp header={UsefulLinks} list={links} />
             <div className="footerInfo">
-               <h1>TECH<span>CYCLE</span></h1>
+               <h1>TECH<span>CYPLES</span></h1>
                <p>we create robust,secure and affordable website, mobile apps, designs and marketing for small and large scale business owners around the world.
                </p>
                <ul>
@@ -85,13 +87,13 @@ const Footer = () => {
                            svgElement = null
                      }
                      return <li key={index}>
-                        {svgElement}
+                        <a href="#">
+                           {svgElement}
+                        </a>
                      </li>
                   })}
                </ul>
             </div>
-            <FooterListComp header={services} list={ourServiceList} />
-            <FooterListComp header={UsefulLinks} list={links} />
          </div>
          <p className="copyright"><span className="span_copy">Copyright &copy; 2024</span> TECHCYCLE</p>
       </footer>

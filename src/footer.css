@@ -59,6 +59,12 @@ footer {
    fill: white;
 }
 
+.footerInfo ul li a {
+   width: 18px;
+   height: 18px;
+   /* fill: white */
+}
+
 .copyright {
    text-align: center;
    padding: 2em 0;

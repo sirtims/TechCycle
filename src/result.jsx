@@ -3,12 +3,12 @@ import "./result.css"
 const Result = () => {
    const happy = {
       url: "/images/smile.png",
-      value: 500,
+      value: 25,
       message: "Happy Clients"
    }
    const projects = {
       url: "/images/folder.png",
-      value: 50,
+      value: 25,
       message: "Completed Projects"
    }
    const date = {
@@ -19,7 +19,7 @@ const Result = () => {
    const cert = {
       url: "/images/people.png",
       value: 20,
-      message: "Always Available Everyday"
+      message: "Experts"
    }
    const moveDown = "down"
    return (

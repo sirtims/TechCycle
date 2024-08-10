@@ -57,7 +57,7 @@
 }
 
 .mainAbout_projects .services_header h2::after {
-   left: 195px;
+   left: 180px;
 }
 
 .mainAbout_projects .web_cart {
@@ -82,7 +82,7 @@
 }
 
 .activeBtn {
-   background: rgb(255, 187, 0);
+   background: rgb(228, 179, 0);
    color: #ffffff;
 }
 

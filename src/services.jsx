@@ -12,7 +12,7 @@ const itemvariants = {
       opacity: 1,
       scale: 1,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear",
          delay: 0.15 * index
       }
@@ -23,7 +23,7 @@ const servicesVariants = {
       y: 100,
       opacity: 0,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear"
       }
    },
@@ -31,7 +31,7 @@ const servicesVariants = {
       y: 0,
       opacity: 1,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear"
       }
    }

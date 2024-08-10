@@ -47,7 +47,7 @@ function App() {
             <p>&uarr;</p>
           </div>
           <div className={`whatsappBtn ${scrolled === true ? "visible" : ""}`}>
-            <a href="https://wa.me/+2348102201819?text=Hello%20there!" target="_blank">
+            <a href="https://wa.me/+2348162623184?text=Hello%20there!" target="_blank">
               <img src="/images/watsapBtn.png" alt="" />
             </a>
           </div>

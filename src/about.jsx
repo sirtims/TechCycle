@@ -5,7 +5,7 @@ const devVariants = {
       x: "-100px",
       opacity: 0,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear",
 
       }
@@ -14,7 +14,7 @@ const devVariants = {
       x: 0,
       opacity: 1,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear",
 
       }
@@ -25,7 +25,7 @@ const aboutVariants = {
       x: "100px",
       opacity: 0,
       transition: {
-         duration: 1,
+         duration: 0.5,
          ease: "linear",
       }
    },
@@ -33,7 +33,7 @@ const aboutVariants = {
       x: 0,
       opacity: 1,
       transition: {
-         duration: 1,
+         duration: 0.5,
          ease: "linear",
 
       }
@@ -44,7 +44,7 @@ const itemVariants = {
       scale: 0.3,
       opacity: 0,
       transition: {
-         duration: 1.5,
+         duration: .5,
          ease: "linear"
       }
    },
@@ -52,7 +52,7 @@ const itemVariants = {
       scale: 1,
       opacity: 1,
       transition: {
-         duration: 1.5,
+         duration: .5,
          ease: "linear"
       }
    }

@@ -7,14 +7,14 @@ const content = [
       url: "/images/head_man.webp",
       name: "TIMOTHY OMAFE",
       profession: "Frontend Developer",
-      about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim exercitationem animi dolorum impedit laborum perferendis dolor rerum, nemo illo! Quaerat at voluptates praesentium officia iusto.",
+      about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim ",
 
    },
    {
       url: "/images/head_woman.webp",
       name: "JOY PETER",
       profession: "Graphic Designer",
-      about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim exercitationem animi dolorum impedit laborum perferendis dolor rerum, nemo illo! Quaerat Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim exercitationem animi dolorum impedit laborum perferendis dolor rerum, nemo illo! Quaerat at voluptates praesentium officia iusto at voluptates praesentium officia iusto.",
+      about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim exercitationem animi dolorum impedit laborum perferendis dolor rerum, nemo ",
 
 
 
@@ -23,7 +23,7 @@ const content = [
       url: "/images/head_man.webp",
       name: "TOPSON SEGUN",
       profession: "Data Analyst",
-      about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim exercitationem animi dolorum impedit laborum perferendis dolor rerum, nemo illo! Quaerat at voluptates praesentium officia iusto.",
+      about: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam error recusandae fuga, assumenda enim exercitationem animi dolorum impedit .",
 
    },
    {

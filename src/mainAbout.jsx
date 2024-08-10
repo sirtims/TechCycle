@@ -6,7 +6,7 @@ const servicesVariants = {
       y: 100,
       opacity: 0,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear"
       }
    },
@@ -14,7 +14,7 @@ const servicesVariants = {
       y: 0,
       opacity: 1,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear"
       }
    }
@@ -38,8 +38,8 @@ const MainAbout = () => {
          <div className="mainAbout_about">
             <img src="/images/about_placeHolder.jpg" alt="" />
             <div className="details">
-               <h1>About TECHCYCLE</h1>
-               <p className="italics">Founded on the 19th of October, 2018 by GANIYU MUSA B.</p>
+               <h1>About TECHCYPLES</h1>
+               <p className="italics">Founded on the 19th of October, 2018 by SIMISOLA DAVID.</p>
                <p>TECHCYCLE is an organization that was built to help solve human problems(technologically), ranging from</p>
                <p>Building Robust and Dynamic Websites</p>
                <p>Promoting Business/Brands via Graphical Advertisement and

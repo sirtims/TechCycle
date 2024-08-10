@@ -6,7 +6,7 @@ const servicesVariants = {
       y: 100,
       opacity: 0,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear"
       }
    },
@@ -14,7 +14,7 @@ const servicesVariants = {
       y: 0,
       opacity: 1,
       transition: {
-         duration: 1,
+         duration: .5,
          ease: "linear"
       }
    }
@@ -209,53 +209,47 @@ const Pricing = () => {
       title: "BRONZE",
       price: "₦180,000"
    }
-   const bronzeBg = {
-      titleBg: "bronzeBg",
-      btnBg: "bronzeBtn"
-   }
+
    const silverDetails = {
       title: "SILVER",
       price: "₦200,000"
    }
-   const silverBg = {
-      titleBg: "silverBg",
-      btnBg: "silverBtn"
-   }
+
    const goldDetails = {
       title: "GOLD",
       price: "₦230,000"
    }
-   const goldBg = {
-      titleBg: "goldBg",
-      btnBg: "goldBtn"
-   }
+
    const diamondDetails = {
       title: "DIAMOND",
       price: "₦230,000"
    }
-   const diamondBg = {
-      titleBg: "diamondBg",
-      btnBg: "diamondBtn"
+   const bg = {
+      titleBg: "Bg",
+      btnBg: "Bg"
    }
+
    return (
       <section id='pricing' className="pricing_main">
-         <motion.div className="services_header"
-            variants={servicesVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-               once: true
-            }}
-         >
-            <h2>VTU WEBSITE</h2>
-            <h1>PRICING</h1>
-         </motion.div>
-         <div className="pricing_main_wrapper">
-            <PricingComponents info={bronzeInfo} className={bronzeBg} details={bronzDetails} />
-            <PricingComponents info={sliverInfo} className={silverBg} details={silverDetails} />
-            <PricingComponents info={goldInfo} className={goldBg} details={goldDetails} />
-            <PricingComponents info={diamondInfo} className={diamondBg} details={diamondDetails} />
+         <div className="price_main_inner_wrapper">
+            <motion.div className="services_header"
+               variants={servicesVariants}
+               initial="initial"
+               whileInView="animate"
+               viewport={{
+                  once: true
+               }}
+            >
+               <h2>VTU WEBSITE</h2>
+               <h1>PRICING</h1>
+            </motion.div>
+            <div className="pricing_main_wrapper">
+               <PricingComponents info={bronzeInfo} className={bg} details={bronzDetails} />
+               <PricingComponents info={sliverInfo} className={bg} details={silverDetails} />
+               <PricingComponents info={goldInfo} className={bg} details={goldDetails} />
+               <PricingComponents info={diamondInfo} className={bg} details={diamondDetails} />
 
+            </div>
          </div>
       </section>
    )

@@ -2,48 +2,22 @@
    background: #e1e1e1;
    padding: 3rem 1rem !important;
    box-sizing: border-box;
+   width: 100%;
 }
 
-.pricing_main_wrapper {
-   width: fit-content;
+.price_main_inner_wrapper {
+   width: 90%;
    margin-inline: auto;
-
 }
+
+.pricing_main_wrapper {}
 
 .pricing_main .services_header h2::after {
    left: 150px;
 }
 
-.bronzeBg {
-   background: linear-gradient(to right, #30A6CC, #84D6EE 20px, #84D6EE 13px, #30A6CC 38px, #30A6CC 40%, #4DB5DC 60%);
-}
-
-.bronzeBtn {
-   background: linear-gradient(#41B1D9, #1098CC);
-}
-
-.silverBg {
-   background: linear-gradient(to right, #8a8d84, #f2f2ef 20px, #fffff7 13px, #b6b8b4 38px, #dcdfd8 40%, #c6c7c4 60%);
-}
-
-.silverBtn {
-   background: linear-gradient(#e0e4df, #adb0ad);
-}
-
-.goldBg {
-   background: linear-gradient(to right, #F37A21, #F5B259 20px, #F5B259 13px, #F37A21 38px, #F37A21 40%, #F8931F 60%);
-}
-
-.goldBtn {
-   background: linear-gradient(#FAAF3C, #F89923);
-}
-
-.diamondBg {
-   background: linear-gradient(to right, #84c00c, #dbdb0d 20px, #d4d420 13px, #76cb21 38px, #69b504 40%, #92d609 60%);
-}
-
-.diamondBtn {
-   background: linear-gradient(#92d609, #188c18);
+.Bg {
+   background: linear-gradient(to right, rgb(1, 1, 158), rgb(186, 186, 252) 20px, rgb(135, 135, 255) 13px, rgb(15, 15, 255) 38px, rgb(1, 1, 158) 40%, rgb(1, 1, 158) 60%);
 }
 
 @media (min-width: 700px) and (max-width:1200px) {

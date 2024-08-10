@@ -5,12 +5,27 @@ const FooterListComp = ({ header, list }) => {
       <div className="footerListCompDiv">
          <h3>{header}</h3>
          <ul>
-            {list.map((el, index) => (
-               <li key={index}>
-                  <p> &rarr;</p>
-                  <p>{el}</p>
+            {list.map((el, index) => {
+               let data
+               switch (header) {
+                  case "Our Service":
+                     data = (
+                        <p>{el}</p>
+                     )
+                     break;
+                  case "Useful Links":
+                     data = (
+                        <a href="">{el}</a>
+                     )
+                     break;
+                  default:
+                     data = null
+               }
+               return <li key={index}>
+                  <img src="/images/bulletin.svg" alt="" />
+                  {data}
                </li>
-            ))}
+            })}
          </ul>
       </div>
    )

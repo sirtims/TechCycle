@@ -6,23 +6,7 @@ const Hero = () => {
          {/* hero content section */}
          <div className="hero_contents">
             <div className='hero_title'>
-               <motion.p
-                  className='welcome'
-                  initial={{
-                     scale: 0.3,
-                     opacity: 0.3
-                  }}
-                  animate={{
-                     scale: 1,
-                     opacity: 1
-                  }}
-                  transition={{
-                     duration: 1,
-                     ease: 'linear'
-                  }}
-               >
-                  Welcome to
-               </motion.p> <br />
+
                <motion.p
                   className='company_name'
                   initial={{
@@ -56,8 +40,7 @@ const Hero = () => {
                   ease: 'linear'
                }}
             >
-               We create <span className='highlight'>Robust,secure and affordable website, as well as graphics design</span> for small and large scale business owners around the world
-               we also promote your business/brand via our dynamic digital marketing skills.
+               We create <span className='highlight'>Robust,secure and affordable website, offers graphics design</span> and promoting businesses globaly with our dynamic digital marketing skills.
             </motion.p>
             <motion.a
                className='hero_btn' href="#"

@@ -52,13 +52,18 @@
 .slide_content h3 {
 
    margin: 0;
-   color: orange;
+   color: rgb(228, 179, 0);
 }
 
-.slide_content p {}
+.slide_content p {
+   font-style: italic;
+   margin-top: 0;
+   color: rgba(240, 248, 255, 0.877);
+}
 
 .slide_content.active {
    opacity: 1;
+
 }
 
 .slideBtn {
@@ -82,5 +87,5 @@
 }
 
 .slideBtn .slide_btn .activeBtn {
-   background: orange;
+   background: rgb(228, 179, 0)
 }

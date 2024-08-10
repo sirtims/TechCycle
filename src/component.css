@@ -2,10 +2,10 @@
    width: fit-content;
    padding: 20px 0 35px 0;
    background: #fff;
-   margin: 1em 1em 3em 0.5em;
+   margin: 1em 1em 3em 0;
 
    border-radius: 10px;
-   box-shadow: 0 0 12px rgb(72, 70, 70);
+   box-shadow: 0 0 5px rgba(72, 70, 70, 0.67);
 }
 
 .category {
@@ -38,7 +38,7 @@
 }
 
 .buletten_wrapper {
-   padding: 10px;
+   padding: 5px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -48,8 +48,8 @@
 }
 
 .buletten_wrapper img {
-   width: 20px;
-   height: 18px;
+   width: 10px;
+   height: 10px;
    object-fit: cover;
 }
 
@@ -73,12 +73,12 @@
 
 .category_list p {
    color: #777;
-   font-size: 1.1rem;
+   font-size: 1rem;
    font-weight: 400;
-   line-height: 25px;
-   letter-spacing: 0.5px;
+   /* line-height: 25px; */
+   /* letter-spacing: 0.5px; */
    text-transform: capitalize;
-   margin: 0 0 12px;
+   margin: 0 12px;
 
 }
 
@@ -92,36 +92,12 @@
 }
 
 .btn {
-   font-size: 22px;
-   font-weight: 500;
+   font-size: 17px;
+   font-weight: 700;
    color: #fff;
    text-transform: uppercase;
-   width: 200px;
+   width: 150px;
    padding: 6px 6px 5px;
    border-radius: 10px;
    cursor: pointer;
 }
-
-/*  
-clip-path: polygon(x1 y1, x2 y2, x3 y3, ...);
-
-<section className='price_item'>
-         <div className="category">
-            <div className="category_name">BRONZE</div>
-            <div className="category_price">N180,000</div>
-         </div>
-         <ul className="category_list">
-            {infos.map(el => (
-               <li key={el.id}>
-                  <div className="buletten_wrapper">
-                     <img src="/images/buletten.webp" alt="" />
-                  </div>
-                  <p>{el.info}</p>
-               </li>
-            ))}
-         </ul>
-         <div className="category">
-            <button className="btn1">ORDER</button>
-            <button className="btn2">ORDER NOW</button>
-         </div>
-      </section> */

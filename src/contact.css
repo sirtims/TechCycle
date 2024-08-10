@@ -2,6 +2,7 @@
    width: fit-content;
    padding: 2em;
    margin: 0;
+   display: none;
 }
 
 .linkContainer .services_header h2::after {

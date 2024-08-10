@@ -8,40 +8,37 @@
 
 .footerListCompDiv ul {
    list-style: none;
-   padding-left: 0.5em;
+   padding-left: 0em;
 
 }
 
 .footerListCompDiv ul li {
    display: flex;
    gap: 1em;
-   margin: 0;
+   margin: 12px 0;
+   padding: 0;
 }
 
 .footerListCompDiv ul li p {
-   margin-top: 0;
+   margin: 0;
    font-size: 0.9rem;
    color: rgb(224, 211, 187);
 }
 
-.footerListCompDiv ul li p:nth-child(1) {
-   color: rgb(194, 127, 2);
+.footerListCompDiv ul li a {
+   /* margin-top: 12px 0; */
+   font-size: 0.9rem;
+   color: rgb(224, 211, 187);
+   text-decoration: none;
 }
 
+.footerListCompDiv ul li a:hover {
 
+   color: rgb(228, 179, 0);
 
+}
 
-
-
-/* 
-  <div className="footerListComp">
-         <h3>Our Services</h3>
-         <ul>
-            {ourServiceList.map((el, index) => (
-               <li key={index}>
-                  <p> &rarr;</p>
-                  <p>{el}</p>
-               </li>
-            ))}
-         </ul>
-      </div> */
+.footerListCompDiv ul li img {
+   width: 15px;
+   height: 15px;
+}
