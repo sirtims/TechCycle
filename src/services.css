@@ -9,13 +9,13 @@
 }
 
 .services_header h1 {
-   font-size: 36px;
+   font-size: 30px;
    font-weight: 700;
    font-style: normal;
    text-transform: uppercase;
    font-family: "Poppins", sans-serif;
    color: #010483;
-   /* letter-spacing: 2px; */
+
 }
 
 .services_header h2 {
