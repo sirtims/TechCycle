@@ -95,7 +95,7 @@ const Footer = () => {
                </ul>
             </div>
          </div>
-         <p className="copyright"><span className="span_copy">Copyright &copy; 2024</span> TECHCYCLE</p>
+         <p className="copyright"><span className="span_copy">Copyright &copy; 2024</span> TECHCYPLES</p>
       </footer>
    )
 }
