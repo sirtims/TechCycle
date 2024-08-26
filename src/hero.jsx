@@ -40,7 +40,9 @@ const Hero = () => {
                   ease: 'linear'
                }}
             >
-               We create <span className='highlight'>Robust,secure and affordable website, offers graphics design</span> and promoting businesses globaly with our dynamic digital marketing skills.
+               Explosive Growth with Result-Driven Digital Advertising
+               Turn your vision into reality. We are your trusted partner for data-powered digital advertising that drives real revenue and outperforms your competitors build a conversion-driven website with <span className='highlight'>TECHCYPLES GLOBAL.</span>
+
             </motion.p>
             <motion.a
                className='hero_btn' href="#"

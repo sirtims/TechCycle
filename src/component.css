@@ -8,15 +8,16 @@
    box-shadow: 0 0 5px rgba(72, 70, 70, 0.67);
 }
 
-.category {
-   text-align: center;
-}
+/* .category {
+
+
+} */
 
 .category_name {
-   width: 98%;
+   width: 60%;
    font-family: "Montserrat", sans-serif;
-
-   padding: 14px 0 7px;
+   padding-left: 15px;
+   padding: 14px;
    margin: 0 20px 20px 0;
    font-size: 2rem;
    font-weight: 700;
@@ -30,6 +31,7 @@
 .category_price {
    color: #000;
    font-size: 40px;
+   padding-left: 15px;
    font-weight: 600;
    line-height: 40px;
    margin-bottom: 0.5em;
@@ -85,19 +87,25 @@
 /* buttons */
 .category_btn {
    display: flex;
-   flex-direction: column;
-   gap: 1em;
+   gap: 0.5em;
    text-align: center;
+   justify-content: center;
    align-items: center;
 }
 
 .btn {
-   font-size: 17px;
+   font-size: 15px;
    font-weight: 700;
    color: #fff;
    text-transform: uppercase;
-   width: 150px;
-   padding: 6px 6px 5px;
-   border-radius: 10px;
+   width: 100px;
+   padding: 6px 10px;
+   border-radius: 50px;
    cursor: pointer;
+   transition: background 0.15s ease;
+   text-decoration: none;
+}
+
+.btn:hover {
+   background: rgba(1, 1, 120, 0.713);
 }

@@ -20,7 +20,7 @@ const servicesVariants = {
    }
 }
 const cartegories = ["All", "Website", "Gaphics", "Apps"]
-
+const activities = ['Building Robust and Dynamic Websites', 'Promoting Business/Brands via Graphical Advertisement and our Digital Marketing Strategies', 'Creating mobile application for both Android and Ios Devices.']
 const MainAbout = () => {
    const [isActive, setIsActive] = useState(null)
    const [btnState, setBtnState] = useState(true)
@@ -41,14 +41,22 @@ const MainAbout = () => {
                <h1>About TECHCYPLES</h1>
                <p className="italics">Founded on the 19th of October, 2018 by SIMISOLA DAVID.</p>
                <p>TECHCYCLE is an organization that was built to help solve human problems(technologically), ranging from</p>
-               <p>Building Robust and Dynamic Websites</p>
+               <ul className="details_ul">
+                  {activities.map((el, index) => (
+                     <li className="details_ul_li" key={index}>
+                        <img src="images/buletin.png" alt="" />
+                        <p>{el}</p>
+                     </li>
+                  ))}
+               </ul>
+               {/* <p>Building Robust and Dynamic Websites</p>
                <p>Promoting Business/Brands via Graphical Advertisement and
                   our Digital Marketing Strategies</p>
-               <p>Creating mobile application for both Android and Ios Devices.</p>
+               <p>Creating mobile application for both Android and Ios Devices.</p> */}
             </div>
          </div>
          <div className="mainAbout_websits">
-            <img src="/images/dev2.png" alt="" />
+            <img src="/images/dev2.jpg" alt="" />
             <div className="web">
                <h1>Hosted Websites:</h1>
                <p>Below is a list of some of our hosted and completed website projects:</p>

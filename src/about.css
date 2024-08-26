@@ -2,6 +2,7 @@ section {
    width: 100%;
    margin: 0;
    font-size: 1rem;
+
 }
 
 .about_wrapper {
@@ -26,8 +27,9 @@ section {
 }
 
 .about_info p {
-   font-size: 1.rem;
+
    line-height: 1.3em;
+   margin-top: 0;
 }
 
 .about_info .intro {
@@ -36,7 +38,7 @@ section {
 }
 
 .about_info_ul {
-   margin-top: 3em;
+   margin-top: 1em;
    padding-left: 0;
    writing-mode: horizontal-tb;
    direction: ltr;
@@ -61,13 +63,15 @@ section {
 .about_info_h1 {
    color: rgb(0, 4, 131);
    font-size: 2rem;
+   margin-bottom: 0;
 
 }
 
 .about_info_ul h3 {
    margin-top: 0;
+   margin-bottom: 0;
    font-size: 1.3rem;
-   color: rgb(228, 179, 0);
+
 }
 
 

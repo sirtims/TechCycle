@@ -90,7 +90,7 @@ const About = () => {
                   once: true,
                }}
             >
-               <img src="/images/dev1.avif" alt="" />
+               <img src="/images/dev1.jpg" alt="" />
             </motion.div>
             <div className="about_info">
                <motion.div

@@ -21,8 +21,8 @@ const PricingComponents = ({ info, details, className }) => {
             ))}
          </ul>
          <div className="category_btn">
-            <a className={`btn ${className.btnBg}`}>ORDER</a>
-            <a className={`btn ${className.btnBg}`}>ORDER NOW</a>
+            <a href='#' className={`btn ${className.btnBg}`}>ORDER</a>
+            <a href='#' className={`btn ${className.btnBg}`}>ORDER NOW</a>
          </div>
       </section>
    )

@@ -3,6 +3,7 @@
    padding: 3rem 1rem !important;
    box-sizing: border-box;
    width: 100%;
+   margin-top: 64px;
 }
 
 .price_main_inner_wrapper {
@@ -17,7 +18,7 @@
 }
 
 .Bg {
-   background: linear-gradient(to right, rgb(1, 1, 158), rgb(186, 186, 252) 20px, rgb(135, 135, 255) 13px, rgb(15, 15, 255) 38px, rgb(1, 1, 158) 40%, rgb(1, 1, 158) 60%);
+   background: rgb(1, 1, 158);
 }
 
 @media (min-width: 700px) and (max-width:1200px) {
