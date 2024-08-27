@@ -1,8 +1,10 @@
-
+import TeamsHero from "./teamePageComponents/teamsHero"
+import Brand from "./teamePageComponents/brand"
 const Teampage = () => {
    return (
-      <div>
-         <h1>hello</h1>
+      <div className="teamsPage">
+         <TeamsHero />
+         <Brand />
       </div>
    )
 }

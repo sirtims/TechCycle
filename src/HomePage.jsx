@@ -1,11 +1,11 @@
-import Hero from "./hero"
-import About from "./about"
-import Services from "./services"
-import Pricing from "./pricing"
-import Result from "./result.jsx"
-import MainAbout from "./mainAbout.jsx"
-import Slider from "./slider.jsx"
-import Contact from "./contact.jsx"
+import Hero from "./homPageComponents/hero"
+import About from "./homPageComponents/about"
+import Services from "./homPageComponents/services"
+import Pricing from "./homPageComponents/pricing"
+import Result from "./homPageComponents/result.jsx"
+import MainAbout from "./homPageComponents/mainAbout.jsx"
+import Slider from "./homPageComponents/slider.jsx"
+import Contact from "./homPageComponents/contact.jsx"
 const HomePage = () => {
    return (
       <div>

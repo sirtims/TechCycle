@@ -1,13 +1,10 @@
-// import Header from "./header"
-// import HomePage from "./HomePage.jsx"
-// import Footer from "./footer.jsx"
-// import Teampage from "./Teampage.jsx";
+
 import { useState, useEffect, Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom'
 // lAZY load components
-const Header = lazy(() => import("./header"))
+const Header = lazy(() => import("./header/header.jsx"))
 const HomePage = lazy(() => import("./HomePage.jsx"))
-const Footer = lazy(() => import("./footer.jsx"))
+const Footer = lazy(() => import("./footer/footer.jsx"))
 const Teampage = lazy(() => import("./Teampage.jsx"))
 function App() {
   const [scrolled, setScrolled] = useState(false);
