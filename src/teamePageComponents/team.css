@@ -101,19 +101,19 @@
 @media (max-width:514px) {
 
    .team_ul_li {
-      width: 150px;
+      width: 147px;
    }
 
    .team_ul_li div {
-      width: 115px;
-      border-radius: 57.5px;
+      width: 110px;
+      border-radius: 55px;
 
    }
 
    .team_ul_li img {
-      width: 115px;
-      height: 115px;
-      border-radius: 57.5px;
+      width: 110px;
+      height: 110px;
+      border-radius: 55px;
    }
 
    .team_ul_li h3 {

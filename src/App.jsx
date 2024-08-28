@@ -25,7 +25,7 @@ function App() {
     };
   }, [scrolled])
   const scrollToSection = () => {
-    const section = document.getElementById('hero')
+    const section = document.getElementById('hero') || document.getElementById('teamHero')
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
