@@ -22,7 +22,6 @@ const FooterListComp = ({ header, list }) => {
                      data = null
                }
                return <li key={index}>
-                  <img src="/images/bulletin.svg" alt="" />
                   {data}
                </li>
             })}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+.team {
+   width: 90%;
+   margin: 2em auto 4em;
+
+   font-family: 'Space Grotesk', sans-serif;
+}
+
+.team_h1 {
+   margin-top: 1em;
+   margin-bottom: 0;
+   font-size: 32px;
+}
+
+.team_p {
+   margin-bottom: 0;
+   margin-top: 0;
+   max-width: 700px;
+   margin-inline: auto;
+}
+
+.team_h1,
+.team_p {
+   text-align: center;
+}
+
+.team_ul {
+   list-style: none;
+   padding: 2em 0 0 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-basis: auto;
+   align-items: start;
+   gap: 10px;
+   align-self: auto;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+
+.team_ul_li {
+   width: 200px;
+   padding: 0.5em;
+   gap: 5px;
+   justify-content: start;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border-radius: 5px;
+   box-shadow: 0 2px 20px rgba(170, 169, 169, 0.24);
+   transition: box-shadow .3s ease;
+}
+
+.team_ul_li:hover,
+.team_ul_li:focus {
+   box-shadow: 0 2px 30px rgba(170, 169, 169, 0.528);
+}
+
+.team_ul_li div {
+   width: 150px;
+   border-radius: 75px;
+   background: rgba(0, 0, 139, 0.087);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.2em;
+   margin-top: 16px;
+
+}
+
+.team_ul_li img {
+   width: 150px;
+   height: 150px;
+   object-fit: contain;
+   border-radius: 75px;
+}
+
+.team_ul_li h3 {
+   margin: 0;
+}
+
+.team_ul_li p {
+   margin-top: 0;
+   color: rgba(0, 0, 0, 0.62);
+   font-size: 15px;
+   line-height: 18px;
+}
+
+
+
+@keyframes slide_down {
+   to {
+      transform: none;
+      opacity: 1;
+   }
+}
+
+@media (max-width:514px) {
+
+   .team_ul_li {
+      width: 150px;
+   }
+
+   .team_ul_li div {
+      width: 115px;
+      border-radius: 57.5px;
+
+   }
+
+   .team_ul_li img {
+      width: 115px;
+      height: 115px;
+      border-radius: 57.5px;
+   }
+
+   .team_ul_li h3 {
+      margin: 0;
+   }
+
+   .team_ul_li p {
+      margin-top: 0;
+      color: rgba(0, 0, 0, 0.62);
+      font-size: 15px;
+   }
+}
+
+@media (min-width:600px) {
+   .team_h1 {
+      margin-top: 1em;
+      font-size: 62px;
+   }
+
+   .team_p {
+      font-size: 20px;
+   }
+
+}

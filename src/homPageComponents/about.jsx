@@ -64,19 +64,19 @@ const About = () => {
          id: 1,
          url: "/images/Fast.png",
          heading: "We're Fast",
-         message: "We deliver all projects as fast as possible, our websites are automated and get delivered to you almost instantly."
+         message: "We prioritize efficiency in every aspect of our work, ensuring rapid delivery without compromising quality."
       },
       {
          id: 2,
          url: "/images/Reliable.png",
          heading: "Reliable",
-         message: "With our several years of experience and engineers, we have learnt in the past years to be able to fully optimize our platform for reliability and dependability."
+         message: "With our several years of experience as engineers, we have learnt in the past years to be able to fully optimize our platform for reliability and dependability."
       },
       {
          id: 3,
          url: "/images/Satisfactory.png",
          heading: "100% Satisfactory",
-         message: "WWe make our project suite your taste/demands perfectly, just as you wish. Here at MSORG Developers, we make your dreams come true, just the way you wish."
+         message: "We make our project match up with your desires or demands just you dream, we bring it to reality. Here at Techcyples we bring your dreams to reality."
       }
    ]
    return (

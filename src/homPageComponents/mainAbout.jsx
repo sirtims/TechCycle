@@ -20,7 +20,7 @@ const servicesVariants = {
    }
 }
 const cartegories = ["All", "Website", "Gaphics", "Apps"]
-const activities = ['Building Robust and Dynamic Websites', 'Promoting Business/Brands via Graphical Advertisement and our Digital Marketing Strategies', 'Creating mobile application for both Android and Ios Devices.']
+const activities = ['Building Robust and Dynamic Websites', 'Promoting Business/Brands via Graphical Advertisement and our Digital Marketing Strategies', 'Creating mobile application for both Android and iOS Devices.']
 const MainAbout = () => {
    const [isActive, setIsActive] = useState(null)
    const [btnState, setBtnState] = useState(true)
@@ -49,10 +49,6 @@ const MainAbout = () => {
                      </li>
                   ))}
                </ul>
-               {/* <p>Building Robust and Dynamic Websites</p>
-               <p>Promoting Business/Brands via Graphical Advertisement and
-                  our Digital Marketing Strategies</p>
-               <p>Creating mobile application for both Android and Ios Devices.</p> */}
             </div>
          </div>
          <div className="mainAbout_websits">

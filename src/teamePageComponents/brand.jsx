@@ -1,9 +1,28 @@
 import './brand.css'
-
+import { motion } from 'framer-motion'
+const slideUpVariant = {
+   hidden: {
+      y: '70px',
+      opacity: 0,
+   },
+   animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+         duration: 0.6,
+         ease: 'easeOut',
+      },
+   },
+};
 const Brand = () => {
    return (
       <section className='brand'>
-         <h1>Brands Trust Us</h1>
+         <motion.h1
+            variants={slideUpVariant}
+            initial="hidden"
+            whileInView="animate"
+            viewport={{ once: true }}
+         >Brands Trust Us</motion.h1>
          <div className="brand_inner_wrapper">
             <img className='item item1' src="images/brand_logo1.jpg" alt="" />
             <img className='item item2' src="images/brand_logo2.jpg" alt="" />
