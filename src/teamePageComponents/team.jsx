@@ -42,37 +42,37 @@ const slideUpVariant = {
 
 const team = [
    {
-      url: 'images/david_sumisola.png',
+      url: '/images/david_sumisola.png',
       name: 'David Sumisola',
       role: 'C.E.O and Chief Technology Officer',
    },
    {
-      url: 'images/daniel_bayode.png',
+      url: '/images/daniel_bayode.png',
       name: 'Daniel Bayode',
       role: 'Customer Support',
    },
    {
-      url: 'images/oluwafemi_damilola.png',
+      url: '/images/oluwafemi_damilola.png',
       name: 'Oluwafemi Damilola',
       role: 'Head of Operation',
    },
    {
-      url: 'images/paul_ekundayo.png',
+      url: '/images/paul_ekundayo.png',
       name: 'Paul Ekundayo',
       role: 'Graphic Designer',
    },
    {
-      url: 'images/precious_emere.png',
+      url: '/images/precious_emere.png',
       name: 'Precious Emere',
       role: 'Digital Strategist and Digital Marketer',
    },
    {
-      url: 'images/rose_marvelous.png',
+      url: '/images/rose_marvelous.png',
       name: 'Rose Marvelous',
       role: 'Frontend Developer',
    },
    {
-      url: 'images/timothy_omafe.png',
+      url: '/images/timothy_omafe.png',
       name: 'Timothy Omafe',
       role: 'Software Engineer',
    },
